@@ -46,6 +46,7 @@ public class StandAloneTest2 {
         
        driver.findElement(By.xpath("(//a[normalize-space()='Place Order'])[1]")).click();
        System.out.println(driver.findElement(By.cssSelector("label.ng-star-inserted")).getText());
+       System.out.println(driver.findElement(By.cssSelector("label.ng-star-insertednew")).getText());
        
 
 

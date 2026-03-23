@@ -56,6 +56,19 @@ public class SubmitOrderTest extends BaseTest{
 		Assert.assertTrue(ordersPage.VerifyOrderDisplay(productName));
 		
 }
+
+	@Test(dependsOnMethods= {"submitOrder"})
+	public void OrderHistoryTes()
+	{
+		//"ZARA COAT 3";
+		ProductCatalogue productCatalogue = landingPage.loginApplication("anshika@gmail.com", "Iamking@000");
+		OrderPage ordersPage = productCatalogue.goToOrdersPage();
+		Assert.assertTrue(ordersPage.VerifyOrderDisplay(productName));
+		
+		//from US guy commit1
+		//2
+		//3
+}
 	
 
 	

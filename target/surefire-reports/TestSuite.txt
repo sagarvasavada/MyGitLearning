@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 1, Time elapsed: 52.63 s <<< FAILURE! - in TestSuite
+setUpClass(svacademy.Cucumber.TestNGTestRunner)  Time elapsed: 0.842 s  <<< FAILURE!
+java.lang.AbstractMethodError: Receiver class io.cucumber.testng.TestNGCucumberOptionsProvider$TestNGCucumberOptions does not define or inherit an implementation of the resolved method 'abstract java.lang.Class uuidGenerator()' of interface io.cucumber.core.options.CucumberOptionsAnnotationParser$CucumberOptions.
+
+submitOrder(svacademy.tests.SubmitOrderTest)  Time elapsed: 12.822 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at svacademy.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:40)
+
+submitOrder(svacademy.tests.SubmitOrderTest)  Time elapsed: 10.802 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element found by By.cssSelector: .mb-3, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".mb-3"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\SAGAR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58547}, goog:processID: 15724, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58547/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 741aec726b4f7dc4e9a47e23e479e07e
+	at svacademy.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:35)
+

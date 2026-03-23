@@ -1,0 +1,4 @@
+svacademy\PageObjects\LandingPage.class
+svacademy\PageObjects\CheckoutPage.class
+svacademy\PageObjects\ConfirmationPage.class
+svacademy\PageObjects\CartPage.class
